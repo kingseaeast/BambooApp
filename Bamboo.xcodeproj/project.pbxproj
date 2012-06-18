@@ -21,6 +21,10 @@
 		DD65D4EF158E5D61007C48A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD65D4CD158E5D61007C48A2 /* Foundation.framework */; };
 		DD65D4F7158E5D61007C48A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD65D4F5158E5D61007C48A2 /* InfoPlist.strings */; };
 		DD65D4FA158E5D61007C48A2 /* BambooTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD65D4F9158E5D61007C48A2 /* BambooTests.m */; };
+		DD65D504158E5DBA007C48A2 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD65D503158E5DBA007C48A2 /* CoreMotion.framework */; };
+		DD65D508158EF505007C48A2 /* b1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD65D507158EF505007C48A2 /* b1.jpg */; };
+		DD65D50A158EF619007C48A2 /* bb1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD65D509158EF619007C48A2 /* bb1.jpg */; };
+		DD65D50C158EFA8F007C48A2 /* bb2.png in Resources */ = {isa = PBXBuildFile; fileRef = DD65D50B158EFA8F007C48A2 /* bb2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,23 +42,27 @@
 		DD65D4CB158E5D61007C48A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DD65D4CD158E5D61007C48A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DD65D4CF158E5D61007C48A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DD65D4D3158E5D61007C48A2 /* Bamboo-Info.plist */ = {isa = PBXFileReference; path = "Bamboo-Info.plist"; sourceTree = "<group>"; };
+		DD65D4D3158E5D61007C48A2 /* Bamboo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bamboo-Info.plist"; sourceTree = "<group>"; };
 		DD65D4D5158E5D61007C48A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD65D4D7158E5D61007C48A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DD65D4D9158E5D61007C48A2 /* Bamboo-Prefix.pch */ = {isa = PBXFileReference; path = "Bamboo-Prefix.pch"; sourceTree = "<group>"; };
-		DD65D4DA158E5D61007C48A2 /* BambooAppDelegate.h */ = {isa = PBXFileReference; path = BambooAppDelegate.h; sourceTree = "<group>"; };
+		DD65D4D9158E5D61007C48A2 /* Bamboo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bamboo-Prefix.pch"; sourceTree = "<group>"; };
+		DD65D4DA158E5D61007C48A2 /* BambooAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BambooAppDelegate.h; sourceTree = "<group>"; };
 		DD65D4DB158E5D61007C48A2 /* BambooAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BambooAppDelegate.m; sourceTree = "<group>"; };
 		DD65D4DE158E5D61007C48A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		DD65D4E0158E5D61007C48A2 /* BambooMainViewController.h */ = {isa = PBXFileReference; path = BambooMainViewController.h; sourceTree = "<group>"; };
+		DD65D4E0158E5D61007C48A2 /* BambooMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BambooMainViewController.h; sourceTree = "<group>"; };
 		DD65D4E1158E5D61007C48A2 /* BambooMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BambooMainViewController.m; sourceTree = "<group>"; };
-		DD65D4E3158E5D61007C48A2 /* BambooFlipsideViewController.h */ = {isa = PBXFileReference; path = BambooFlipsideViewController.h; sourceTree = "<group>"; };
+		DD65D4E3158E5D61007C48A2 /* BambooFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BambooFlipsideViewController.h; sourceTree = "<group>"; };
 		DD65D4E4158E5D61007C48A2 /* BambooFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BambooFlipsideViewController.m; sourceTree = "<group>"; };
 		DD65D4EB158E5D61007C48A2 /* BambooTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BambooTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD65D4EC158E5D61007C48A2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		DD65D4F4158E5D61007C48A2 /* BambooTests-Info.plist */ = {isa = PBXFileReference; path = "BambooTests-Info.plist"; sourceTree = "<group>"; };
+		DD65D4F4158E5D61007C48A2 /* BambooTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BambooTests-Info.plist"; sourceTree = "<group>"; };
 		DD65D4F6158E5D61007C48A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DD65D4F8158E5D61007C48A2 /* BambooTests.h */ = {isa = PBXFileReference; path = BambooTests.h; sourceTree = "<group>"; };
+		DD65D4F8158E5D61007C48A2 /* BambooTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BambooTests.h; sourceTree = "<group>"; };
 		DD65D4F9158E5D61007C48A2 /* BambooTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BambooTests.m; sourceTree = "<group>"; };
+		DD65D503158E5DBA007C48A2 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		DD65D507158EF505007C48A2 /* b1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b1.jpg; sourceTree = "<group>"; };
+		DD65D509158EF619007C48A2 /* bb1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bb1.jpg; sourceTree = "<group>"; };
+		DD65D50B158EFA8F007C48A2 /* bb2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bb2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD65D504158E5DBA007C48A2 /* CoreMotion.framework in Frameworks */,
 				DD65D4CC158E5D61007C48A2 /* UIKit.framework in Frameworks */,
 				DD65D4CE158E5D61007C48A2 /* Foundation.framework in Frameworks */,
 				DD65D4D0158E5D61007C48A2 /* CoreGraphics.framework in Frameworks */,
@@ -84,6 +93,7 @@
 		DD65D4BC158E5D61007C48A2 = {
 			isa = PBXGroup;
 			children = (
+				DD65D503158E5DBA007C48A2 /* CoreMotion.framework */,
 				DD65D4D1158E5D61007C48A2 /* Bamboo */,
 				DD65D4F2158E5D61007C48A2 /* BambooTests */,
 				DD65D4CA158E5D61007C48A2 /* Frameworks */,
@@ -129,6 +139,9 @@
 		DD65D4D2158E5D61007C48A2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DD65D509158EF619007C48A2 /* bb1.jpg */,
+				DD65D50B158EFA8F007C48A2 /* bb2.png */,
+				DD65D507158EF505007C48A2 /* b1.jpg */,
 				DD65D4D3158E5D61007C48A2 /* Bamboo-Info.plist */,
 				DD65D4D4158E5D61007C48A2 /* InfoPlist.strings */,
 				DD65D4D7158E5D61007C48A2 /* main.m */,
@@ -229,6 +242,9 @@
 			files = (
 				DD65D4D6158E5D61007C48A2 /* InfoPlist.strings in Resources */,
 				DD65D4DF158E5D61007C48A2 /* MainStoryboard.storyboard in Resources */,
+				DD65D508158EF505007C48A2 /* b1.jpg in Resources */,
+				DD65D50A158EF619007C48A2 /* bb1.jpg in Resources */,
+				DD65D50C158EFA8F007C48A2 /* bb2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
