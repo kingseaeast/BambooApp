@@ -54,21 +54,26 @@
 }
 
 - (void)sendDataToServer {
-    dataToSend = [[self arrayAverage:rangeArray ] componentsJoinedByString:@","];
+    NSMutableArray* averageArray = [self arrayAverage:rangeArray ];
+    NSNumber *sum = [averageArray valueForKeyPath:@"@sum.self"];
     
-    NSString *body = [[NSString alloc] initWithFormat:@"move[range]=%@", dataToSend];
-    
-    NSURL *url = [NSURL URLWithString:@"http://192.168.2.13:3000/moves.json"];
-    NSMutableURLRequest *theRequest = [NSMutableURLRequest requestWithURL:url];
-    [theRequest setHTTPMethod:@"POST"];
-    [theRequest setHTTPBody:[body dataUsingEncoding:NSUTF8StringEncoding]];
-    
-    NSURLConnection *theConnection=[[NSURLConnection alloc] initWithRequest:theRequest delegate:self];
-    
-    if (theConnection) {
-        receivedData = [[NSMutableData data] init];
-    } else {
-        NSLog(@"theConnection is null");
+    if (sum.intValue > 50) {
+        dataToSend = [averageArray componentsJoinedByString:@","];
+        
+        NSString *body = [[NSString alloc] initWithFormat:@"move[range]=%@", dataToSend];
+        
+        NSURL *url = [NSURL URLWithString:@"http://bambooserver.herokuapp.com/moves.json"];
+        NSMutableURLRequest *theRequest = [NSMutableURLRequest requestWithURL:url];
+        [theRequest setHTTPMethod:@"POST"];
+        [theRequest setHTTPBody:[body dataUsingEncoding:NSUTF8StringEncoding]];
+        
+        NSURLConnection *theConnection=[[NSURLConnection alloc] initWithRequest:theRequest delegate:self];
+        
+        if (theConnection) {
+            receivedData = [[NSMutableData data] init];
+        } else {
+            NSLog(@"theConnection is null");
+        }
     }
     
     lastTransferTime = [NSDate date];
